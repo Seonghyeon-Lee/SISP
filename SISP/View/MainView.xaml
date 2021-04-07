@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="SISP.View.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="22"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*" MinWidth="200"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="6*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Column="0" Grid.Row="0" Background="DarkSlateGray">
+                    <Image/>
+                </Grid>
+
+                <DataGrid Grid.Column="2" Grid.Row="0" BorderThickness="1" BorderBrush="LightGray">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="40">
+                            <DataGridTextColumn.Header>
+                                <TextBlock Text="No"/>
+                            </DataGridTextColumn.Header>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Width="*">
+                            <DataGridTextColumn.Header>
+                                <TextBlock Text="Filename"/>
+                            </DataGridTextColumn.Header>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Width="140">
+                            <DataGridTextColumn.Header>
+                                <TextBlock Text="Same Image Count"/>
+                            </DataGridTextColumn.Header>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <Grid Grid.Column="0" Grid.Row="2" Background="DarkSlateGray">
+                    <Image  />
+                </Grid>
+                
+                <DataGrid Grid.Column="2" Grid.Row="2" BorderThickness="1" BorderBrush="LightGray">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="40">
+                            <DataGridTextColumn.Header>
+                                <TextBlock Text="No"/>
+                            </DataGridTextColumn.Header>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Width="*">
+                            <DataGridTextColumn.Header>
+                                <TextBlock Text="Filename"/>
+                            </DataGridTextColumn.Header>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Horizontal">
+                    <Button Padding="0"
+                            Command="{Binding ButtonClickCommand}"
+                            CommandParameter="OpenFileManager">
+                        <Image Source="..\Resources\playlist-plus.png"/>
+                    </Button>
+                </StackPanel>
+
+                <Button Width="150" HorizontalAlignment="Right">
+                    <TextBlock Text="Run" FontSize="15" VerticalAlignment="Center"/>
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Mah:Flyout Grid.Row="0" Position="Bottom"
+                    Opacity="0.8" CloseButtonVisibility="Collapsed"
+                    Height="{Binding FileManagerHeight}" IsOpen="{Binding IsOpenFileManager}">
+            
+            <Grid Background="Gainsboro">
+                
+            </Grid>
+        </Mah:Flyout>
+        
+        <StatusBar Grid.Row="1">
+
+        </StatusBar>
+    </Grid>
+</UserControl>

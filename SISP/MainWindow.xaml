@@ -3,11 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:Mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:View="clr-namespace:SISP.View"
+        xmlns:ViewModel="clr-namespace:SISP.ViewModel"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SISP"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="SISP" Height="760" Width="960">
 
-    </Grid>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="SizeChanged">
+            <cmd:EventToCommand Command="{Binding WindowSizeChangedCommand}" PassEventArgsToCommand="True"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Window.DataContext>
+        <ViewModel:MainViewModel/>
+    </Window.DataContext>
+
+    <View:MainView/>
 </Mah:MetroWindow>

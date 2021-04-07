@@ -15,3 +15,6 @@ C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.csproj.CoreCompileI
 C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.csproj.CopyComplete
 C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.exe
 C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.pdb
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\View\MainView.g.cs
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\View\MainView.baml
