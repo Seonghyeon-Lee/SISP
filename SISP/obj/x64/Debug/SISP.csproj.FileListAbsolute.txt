@@ -1,0 +1,17 @@
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.csprojAssemblyReference.cache
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\MainWindow.g.cs
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\App.g.cs
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP_MarkupCompile.cache
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP_MarkupCompile.lref
+C:\Users\selee\Documents\GitHub\SISP\build\Debug\SISP.exe.config
+C:\Users\selee\Documents\GitHub\SISP\build\Debug\SISP.exe
+C:\Users\selee\Documents\GitHub\SISP\build\Debug\SISP.pdb
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\App.baml
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\MainWindow.baml
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.g.resources
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.Properties.Resources.resources
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.csproj.GenerateResource.cache
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.csproj.CoreCompileInputs.cache
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.csproj.CopyComplete
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.exe
+C:\Users\selee\Documents\GitHub\SISP\SISP\obj\x64\Debug\SISP.pdb
